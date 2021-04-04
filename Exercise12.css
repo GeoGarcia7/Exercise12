@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color:#594F4F;
+}	
+nav {
+  flow: left;
+  overflow: hidden;
+  background-color: #800000;
+  width:100%;
+  height: 70%; 
+}
+nav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; 
+}
+nav a:hover {
+  background-color: #F5F5DC;
+  color: black;
+}
+.layer1 {
+  background-color: #ff0000;
+  float: left;
+  width: 50%;
+  border: 4px solid #594F4F;
+  padding: 10px;
+  height: 150px; 
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.layer1:hover {opacity: 1}
+
+.layer1 h1 {
+  color: white;
+  text-align: center;
+
+}
+
+.pictures {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #F5F5DC;
+}
+.pictures:hover .overlay {
+  opacity: 0.5;
+}
+.texts {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.layer3 {
+  float: left;
+  width: 33.33%;
+  border: 4px solid #594F4F;
+  padding: 10px;
+  height: 150px;
+  animation-name: example;
+  animation-duration: 30s ;  
+}
+.layer3 h1 {
+  color: white;
+  text-align: center;
+
+}
+.pics {
+  float: left;
+  width: 25%;
+  padding: 5px;
+
+}
+.pics:hover{
+	background-color: white;
+}
+.layer4 {
+  float: left;
+  width: 27%;
+  border: 4px solid #594F4F;
+  padding: 10px;
+  height: 200px; 
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both; 
+}
+.social_link{
+	color:white;
+}
+@keyframes example {
+ 0% {background-color: blue;}
+ 20% {background-color: #00FFFF ;}
+ 40% {background-color: green;}
+ 60% {background-color: #FFCC00;}
+ 80% {background-color: #00E1AE;}
+ 100% {background-color: #1155FA;}
+ 
+}
+
+@media screen and (max-width: 768px) {
+  .layer4 {
+    width: 50%;
+  }
+@media screen and (max-width: 768px) {
+  .layer3 {
+    width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .layer1 {
+    width: 100%;
+    height: 100px;
+  }
+@media screen and (max-width: 768px) {
+  .mid {
+    width: 100%;
+    height: 150px;
+  }
+}@media screen and (max-width: 320px) {
+  .layer4 {
+    width: 100%;
+    height: 100px;
+  }
+@media screen and (max-width: 320px) {
+  .layer1 {
+    width: 100%;
+    height: 100px;
+  }
+@media screen and (max-width: 320px) {
+  .layer3 {
+    width: 100%;
+    height: 200px;
+}@media screen and (max-width: 320px) {
+  .layer4 {
+    width: 100%;
+    height: 100px;
+  }
+  
+
+
